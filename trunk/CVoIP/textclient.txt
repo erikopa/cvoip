@@ -1,0 +1,675 @@
+<!-- Use the  Trace Viewer in src/tools/tracesviewer to view this  trace  
+Here are the stack configuration properties 
+javax.sip.IP_ADDRESS= 10.0.0.15
+javax.sip.STACK_NAME= TextClient
+javax.sip.ROUTER_PATH= null
+javax.sip.OUTBOUND_PROXY= null
+-->
+<description
+ logDescription="TextClient"
+ name="10.0.0.15" />
+
+<!-- Use the  Trace Viewer in src/tools/tracesviewer to view this  trace  
+Here are the stack configuration properties 
+javax.sip.IP_ADDRESS= 10.0.0.15
+javax.sip.STACK_NAME= TextClient
+javax.sip.ROUTER_PATH= null
+javax.sip.OUTBOUND_PROXY= null
+-->
+<description
+ logDescription="TextClient"
+ name="10.0.0.15" />
+
+<!-- Use the  Trace Viewer in src/tools/tracesviewer to view this  trace  
+Here are the stack configuration properties 
+javax.sip.IP_ADDRESS= 10.0.0.15
+javax.sip.STACK_NAME= TextClient
+javax.sip.ROUTER_PATH= null
+javax.sip.OUTBOUND_PROXY= null
+-->
+<description
+ logDescription="TextClient"
+ name="10.0.0.15" />
+
+<!-- Use the  Trace Viewer in src/tools/tracesviewer to view this  trace  
+Here are the stack configuration properties 
+javax.sip.IP_ADDRESS= 10.0.0.15
+javax.sip.STACK_NAME= TextClient
+javax.sip.ROUTER_PATH= null
+javax.sip.OUTBOUND_PROXY= null
+-->
+<description
+ logDescription="TextClient"
+ name="10.0.0.15" />
+
+<message
+from="10.0.0.15:6000" 
+to="10.0.0.15:5000" 
+time="1211827445883"
+isSender="true" 
+transactionId="textclientv1.0:71c9186b7627cfb32c733b041206cf51@10.0.0.15:1:message:10.0.0.15:6000" 
+callId="71c9186b7627cfb32c733b041206cf51@10.0.0.15" 
+firstLine="MESSAGE sip:eriko@10.0.0.15:5000;transport=udp SIP/2.0" 
+>
+<![CDATA[MESSAGE sip:eriko@10.0.0.15:5000;transport=udp SIP/2.0
+Call-ID: 71c9186b7627cfb32c733b041206cf51@10.0.0.15
+CSeq: 1 MESSAGE
+From: "eriko2" <sip:eriko2@10.0.0.15:6000>;tag=textclientv1.0
+To: "eriko" <sip:eriko@10.0.0.15:5000>
+Via: SIP/2.0/UDP 10.0.0.15:6000;branch=branch1
+Max-Forwards: 70
+Contact: "eriko2" <sip:eriko2@10.0.0.15:6000>
+Content-Type: text/plain
+Content-Length: 5
+
+]]>
+</message>
+
+<message
+from="10.0.0.15:6000" 
+to="10.0.0.15:5000" 
+time="1211827445893"
+isSender="false" 
+transactionId="textclientv1.0:71c9186b7627cfb32c733b041206cf51@10.0.0.15:1:message:10.0.0.15:6000" 
+callId="71c9186b7627cfb32c733b041206cf51@10.0.0.15" 
+firstLine="MESSAGE sip:eriko@10.0.0.15:5000;transport=udp SIP/2.0" 
+>
+<![CDATA[MESSAGE sip:eriko@10.0.0.15:5000;transport=udp SIP/2.0
+Call-ID: 71c9186b7627cfb32c733b041206cf51@10.0.0.15
+CSeq: 1 MESSAGE
+From: "eriko2" <sip:eriko2@10.0.0.15:6000>;tag=textclientv1.0
+To: "eriko" <sip:eriko@10.0.0.15:5000>
+Via: SIP/2.0/UDP 10.0.0.15:6000;branch=branch1
+Max-Forwards: 70
+Contact: "eriko2" <sip:eriko2@10.0.0.15:6000>
+Content-Type: text/plain
+Content-Length: 5
+
+]]>
+</message>
+
+<message
+from="10.0.0.15:5000" 
+to="10.0.0.15:6000" 
+time="1211827446059"
+isSender="true" 
+transactionId="textclientv1.0:71c9186b7627cfb32c733b041206cf51@10.0.0.15:1:message:10.0.0.15:6000" 
+callId="71c9186b7627cfb32c733b041206cf51@10.0.0.15" 
+firstLine="SIP/2.0 200 OK" 
+>
+<![CDATA[SIP/2.0 200 OK
+Call-ID: 71c9186b7627cfb32c733b041206cf51@10.0.0.15
+CSeq: 1 MESSAGE
+From: "eriko2" <sip:eriko2@10.0.0.15:6000>;tag=textclientv1.0
+To: "eriko" <sip:eriko@10.0.0.15:5000>;tag=888
+Via: SIP/2.0/UDP 10.0.0.15:6000;branch=branch1
+Content-Length: 0
+
+]]>
+</message>
+
+<message
+from="10.0.0.15:5000" 
+to="10.0.0.15:6000" 
+time="1211827446114"
+isSender="false" 
+transactionId="textclientv1.0:71c9186b7627cfb32c733b041206cf51@10.0.0.15:1:message:10.0.0.15:6000" 
+callId="71c9186b7627cfb32c733b041206cf51@10.0.0.15" 
+firstLine="SIP/2.0 200 OK" 
+>
+<![CDATA[SIP/2.0 200 OK
+Call-ID: 71c9186b7627cfb32c733b041206cf51@10.0.0.15
+CSeq: 1 MESSAGE
+From: "eriko2" <sip:eriko2@10.0.0.15:6000>;tag=textclientv1.0
+To: "eriko" <sip:eriko@10.0.0.15:5000>;tag=888
+Via: SIP/2.0/UDP 10.0.0.15:6000;branch=branch1
+Content-Length: 0
+
+]]>
+</message>
+
+<message
+from="10.0.0.15:5000" 
+to="10.0.0.15:6000" 
+time="1211827456540"
+isSender="true" 
+transactionId="textclientv1.0:8f6387fce3f7bdf0ebbae046bdfe45a4@10.0.0.15:1:message:10.0.0.15:5000" 
+callId="8f6387fce3f7bdf0ebbae046bdfe45a4@10.0.0.15" 
+firstLine="MESSAGE sip:eriko2@10.0.0.15:6000;transport=udp SIP/2.0" 
+>
+<![CDATA[MESSAGE sip:eriko2@10.0.0.15:6000;transport=udp SIP/2.0
+Call-ID: 8f6387fce3f7bdf0ebbae046bdfe45a4@10.0.0.15
+CSeq: 1 MESSAGE
+From: "eriko" <sip:eriko@10.0.0.15:5000>;tag=textclientv1.0
+To: "eriko2" <sip:eriko2@10.0.0.15:6000>
+Via: SIP/2.0/UDP 10.0.0.15:5000;branch=branch1
+Max-Forwards: 70
+Contact: "eriko" <sip:eriko@10.0.0.15:5000>
+Content-Type: text/plain
+Content-Length: 6
+
+]]>
+</message>
+
+<message
+from="10.0.0.15:5000" 
+to="10.0.0.15:6000" 
+time="1211827456544"
+isSender="false" 
+transactionId="textclientv1.0:8f6387fce3f7bdf0ebbae046bdfe45a4@10.0.0.15:1:message:10.0.0.15:5000" 
+callId="8f6387fce3f7bdf0ebbae046bdfe45a4@10.0.0.15" 
+firstLine="MESSAGE sip:eriko2@10.0.0.15:6000;transport=udp SIP/2.0" 
+>
+<![CDATA[MESSAGE sip:eriko2@10.0.0.15:6000;transport=udp SIP/2.0
+Call-ID: 8f6387fce3f7bdf0ebbae046bdfe45a4@10.0.0.15
+CSeq: 1 MESSAGE
+From: "eriko" <sip:eriko@10.0.0.15:5000>;tag=textclientv1.0
+To: "eriko2" <sip:eriko2@10.0.0.15:6000>
+Via: SIP/2.0/UDP 10.0.0.15:5000;branch=branch1
+Max-Forwards: 70
+Contact: "eriko" <sip:eriko@10.0.0.15:5000>
+Content-Type: text/plain
+Content-Length: 6
+
+]]>
+</message>
+
+<message
+from="10.0.0.15:6000" 
+to="10.0.0.15:5000" 
+time="1211827456567"
+isSender="true" 
+transactionId="textclientv1.0:8f6387fce3f7bdf0ebbae046bdfe45a4@10.0.0.15:1:message:10.0.0.15:5000" 
+callId="8f6387fce3f7bdf0ebbae046bdfe45a4@10.0.0.15" 
+firstLine="SIP/2.0 200 OK" 
+>
+<![CDATA[SIP/2.0 200 OK
+Call-ID: 8f6387fce3f7bdf0ebbae046bdfe45a4@10.0.0.15
+CSeq: 1 MESSAGE
+From: "eriko" <sip:eriko@10.0.0.15:5000>;tag=textclientv1.0
+To: "eriko2" <sip:eriko2@10.0.0.15:6000>;tag=888
+Via: SIP/2.0/UDP 10.0.0.15:5000;branch=branch1
+Content-Length: 0
+
+]]>
+</message>
+
+<message
+from="10.0.0.15:6000" 
+to="10.0.0.15:5000" 
+time="1211827456571"
+isSender="false" 
+transactionId="textclientv1.0:8f6387fce3f7bdf0ebbae046bdfe45a4@10.0.0.15:1:message:10.0.0.15:5000" 
+callId="8f6387fce3f7bdf0ebbae046bdfe45a4@10.0.0.15" 
+firstLine="SIP/2.0 200 OK" 
+>
+<![CDATA[SIP/2.0 200 OK
+Call-ID: 8f6387fce3f7bdf0ebbae046bdfe45a4@10.0.0.15
+CSeq: 1 MESSAGE
+From: "eriko" <sip:eriko@10.0.0.15:5000>;tag=textclientv1.0
+To: "eriko2" <sip:eriko2@10.0.0.15:6000>;tag=888
+Via: SIP/2.0/UDP 10.0.0.15:5000;branch=branch1
+Content-Length: 0
+
+]]>
+</message>
+
+<message
+from="10.0.0.15:5000" 
+to="10.0.0.15:6000" 
+time="1211827466467"
+isSender="true" 
+transactionId="textclientv1.0:aff240fcfa137bddeff3b4fb738eade4@10.0.0.15:1:message:10.0.0.15:5000" 
+callId="aff240fcfa137bddeff3b4fb738eade4@10.0.0.15" 
+firstLine="MESSAGE sip:eriko2@10.0.0.15:6000;transport=udp SIP/2.0" 
+>
+<![CDATA[MESSAGE sip:eriko2@10.0.0.15:6000;transport=udp SIP/2.0
+Call-ID: aff240fcfa137bddeff3b4fb738eade4@10.0.0.15
+CSeq: 1 MESSAGE
+From: "eriko" <sip:eriko@10.0.0.15:5000>;tag=textclientv1.0
+To: "eriko2" <sip:eriko2@10.0.0.15:6000>
+Via: SIP/2.0/UDP 10.0.0.15:5000;branch=branch1
+Max-Forwards: 70
+Contact: "eriko" <sip:eriko@10.0.0.15:5000>
+Content-Type: text/plain
+Content-Length: 6
+
+]]>
+</message>
+
+<message
+from="10.0.0.15:5000" 
+to="10.0.0.15:6000" 
+time="1211827466468"
+isSender="false" 
+transactionId="textclientv1.0:aff240fcfa137bddeff3b4fb738eade4@10.0.0.15:1:message:10.0.0.15:5000" 
+callId="aff240fcfa137bddeff3b4fb738eade4@10.0.0.15" 
+firstLine="MESSAGE sip:eriko2@10.0.0.15:6000;transport=udp SIP/2.0" 
+>
+<![CDATA[MESSAGE sip:eriko2@10.0.0.15:6000;transport=udp SIP/2.0
+Call-ID: aff240fcfa137bddeff3b4fb738eade4@10.0.0.15
+CSeq: 1 MESSAGE
+From: "eriko" <sip:eriko@10.0.0.15:5000>;tag=textclientv1.0
+To: "eriko2" <sip:eriko2@10.0.0.15:6000>
+Via: SIP/2.0/UDP 10.0.0.15:5000;branch=branch1
+Max-Forwards: 70
+Contact: "eriko" <sip:eriko@10.0.0.15:5000>
+Content-Type: text/plain
+Content-Length: 6
+
+]]>
+</message>
+
+<message
+from="10.0.0.15:6000" 
+to="10.0.0.15:5000" 
+time="1211827466481"
+isSender="true" 
+transactionId="textclientv1.0:aff240fcfa137bddeff3b4fb738eade4@10.0.0.15:1:message:10.0.0.15:5000" 
+callId="aff240fcfa137bddeff3b4fb738eade4@10.0.0.15" 
+firstLine="SIP/2.0 200 OK" 
+>
+<![CDATA[SIP/2.0 200 OK
+Call-ID: aff240fcfa137bddeff3b4fb738eade4@10.0.0.15
+CSeq: 1 MESSAGE
+From: "eriko" <sip:eriko@10.0.0.15:5000>;tag=textclientv1.0
+To: "eriko2" <sip:eriko2@10.0.0.15:6000>;tag=888
+Via: SIP/2.0/UDP 10.0.0.15:5000;branch=branch1
+Content-Length: 0
+
+]]>
+</message>
+
+<message
+from="10.0.0.15:6000" 
+to="10.0.0.15:5000" 
+time="1211827466483"
+isSender="false" 
+transactionId="textclientv1.0:aff240fcfa137bddeff3b4fb738eade4@10.0.0.15:1:message:10.0.0.15:5000" 
+callId="aff240fcfa137bddeff3b4fb738eade4@10.0.0.15" 
+firstLine="SIP/2.0 200 OK" 
+>
+<![CDATA[SIP/2.0 200 OK
+Call-ID: aff240fcfa137bddeff3b4fb738eade4@10.0.0.15
+CSeq: 1 MESSAGE
+From: "eriko" <sip:eriko@10.0.0.15:5000>;tag=textclientv1.0
+To: "eriko2" <sip:eriko2@10.0.0.15:6000>;tag=888
+Via: SIP/2.0/UDP 10.0.0.15:5000;branch=branch1
+Content-Length: 0
+
+]]>
+</message>
+
+<message
+from="10.0.0.15:5000" 
+to="10.0.0.15:6000" 
+time="1211827467770"
+isSender="true" 
+transactionId="textclientv1.0:6f51fde517062f97ad2888df2407890a@10.0.0.15:1:message:10.0.0.15:5000" 
+callId="6f51fde517062f97ad2888df2407890a@10.0.0.15" 
+firstLine="MESSAGE sip:eriko2@10.0.0.15:6000;transport=udp SIP/2.0" 
+>
+<![CDATA[MESSAGE sip:eriko2@10.0.0.15:6000;transport=udp SIP/2.0
+Call-ID: 6f51fde517062f97ad2888df2407890a@10.0.0.15
+CSeq: 1 MESSAGE
+From: "eriko" <sip:eriko@10.0.0.15:5000>;tag=textclientv1.0
+To: "eriko2" <sip:eriko2@10.0.0.15:6000>
+Via: SIP/2.0/UDP 10.0.0.15:5000;branch=branch1
+Max-Forwards: 70
+Contact: "eriko" <sip:eriko@10.0.0.15:5000>
+Content-Type: text/plain
+Content-Length: 6
+
+]]>
+</message>
+
+<message
+from="10.0.0.15:5000" 
+to="10.0.0.15:6000" 
+time="1211827467772"
+isSender="false" 
+transactionId="textclientv1.0:6f51fde517062f97ad2888df2407890a@10.0.0.15:1:message:10.0.0.15:5000" 
+callId="6f51fde517062f97ad2888df2407890a@10.0.0.15" 
+firstLine="MESSAGE sip:eriko2@10.0.0.15:6000;transport=udp SIP/2.0" 
+>
+<![CDATA[MESSAGE sip:eriko2@10.0.0.15:6000;transport=udp SIP/2.0
+Call-ID: 6f51fde517062f97ad2888df2407890a@10.0.0.15
+CSeq: 1 MESSAGE
+From: "eriko" <sip:eriko@10.0.0.15:5000>;tag=textclientv1.0
+To: "eriko2" <sip:eriko2@10.0.0.15:6000>
+Via: SIP/2.0/UDP 10.0.0.15:5000;branch=branch1
+Max-Forwards: 70
+Contact: "eriko" <sip:eriko@10.0.0.15:5000>
+Content-Type: text/plain
+Content-Length: 6
+
+]]>
+</message>
+
+<message
+from="10.0.0.15:6000" 
+to="10.0.0.15:5000" 
+time="1211827467781"
+isSender="true" 
+transactionId="textclientv1.0:6f51fde517062f97ad2888df2407890a@10.0.0.15:1:message:10.0.0.15:5000" 
+callId="6f51fde517062f97ad2888df2407890a@10.0.0.15" 
+firstLine="SIP/2.0 200 OK" 
+>
+<![CDATA[SIP/2.0 200 OK
+Call-ID: 6f51fde517062f97ad2888df2407890a@10.0.0.15
+CSeq: 1 MESSAGE
+From: "eriko" <sip:eriko@10.0.0.15:5000>;tag=textclientv1.0
+To: "eriko2" <sip:eriko2@10.0.0.15:6000>;tag=888
+Via: SIP/2.0/UDP 10.0.0.15:5000;branch=branch1
+Content-Length: 0
+
+]]>
+</message>
+
+<message
+from="10.0.0.15:6000" 
+to="10.0.0.15:5000" 
+time="1211827467786"
+isSender="false" 
+transactionId="textclientv1.0:6f51fde517062f97ad2888df2407890a@10.0.0.15:1:message:10.0.0.15:5000" 
+callId="6f51fde517062f97ad2888df2407890a@10.0.0.15" 
+firstLine="SIP/2.0 200 OK" 
+>
+<![CDATA[SIP/2.0 200 OK
+Call-ID: 6f51fde517062f97ad2888df2407890a@10.0.0.15
+CSeq: 1 MESSAGE
+From: "eriko" <sip:eriko@10.0.0.15:5000>;tag=textclientv1.0
+To: "eriko2" <sip:eriko2@10.0.0.15:6000>;tag=888
+Via: SIP/2.0/UDP 10.0.0.15:5000;branch=branch1
+Content-Length: 0
+
+]]>
+</message>
+
+<message
+from="10.0.0.15:6000" 
+to="10.0.0.15:5000" 
+time="1211827469131"
+isSender="true" 
+transactionId="textclientv1.0:b08780fb91e965d6d80e80d4badd5fc4@10.0.0.15:1:message:10.0.0.15:6000" 
+callId="b08780fb91e965d6d80e80d4badd5fc4@10.0.0.15" 
+firstLine="MESSAGE sip:eriko@10.0.0.15:5000;transport=udp SIP/2.0" 
+>
+<![CDATA[MESSAGE sip:eriko@10.0.0.15:5000;transport=udp SIP/2.0
+Call-ID: b08780fb91e965d6d80e80d4badd5fc4@10.0.0.15
+CSeq: 1 MESSAGE
+From: "eriko2" <sip:eriko2@10.0.0.15:6000>;tag=textclientv1.0
+To: "eriko" <sip:eriko@10.0.0.15:5000>
+Via: SIP/2.0/UDP 10.0.0.15:6000;branch=branch1
+Max-Forwards: 70
+Contact: "eriko2" <sip:eriko2@10.0.0.15:6000>
+Content-Type: text/plain
+Content-Length: 5
+
+]]>
+</message>
+
+<message
+from="10.0.0.15:6000" 
+to="10.0.0.15:5000" 
+time="1211827469132"
+isSender="false" 
+transactionId="textclientv1.0:b08780fb91e965d6d80e80d4badd5fc4@10.0.0.15:1:message:10.0.0.15:6000" 
+callId="b08780fb91e965d6d80e80d4badd5fc4@10.0.0.15" 
+firstLine="MESSAGE sip:eriko@10.0.0.15:5000;transport=udp SIP/2.0" 
+>
+<![CDATA[MESSAGE sip:eriko@10.0.0.15:5000;transport=udp SIP/2.0
+Call-ID: b08780fb91e965d6d80e80d4badd5fc4@10.0.0.15
+CSeq: 1 MESSAGE
+From: "eriko2" <sip:eriko2@10.0.0.15:6000>;tag=textclientv1.0
+To: "eriko" <sip:eriko@10.0.0.15:5000>
+Via: SIP/2.0/UDP 10.0.0.15:6000;branch=branch1
+Max-Forwards: 70
+Contact: "eriko2" <sip:eriko2@10.0.0.15:6000>
+Content-Type: text/plain
+Content-Length: 5
+
+]]>
+</message>
+
+<message
+from="10.0.0.15:5000" 
+to="10.0.0.15:6000" 
+time="1211827469146"
+isSender="true" 
+transactionId="textclientv1.0:b08780fb91e965d6d80e80d4badd5fc4@10.0.0.15:1:message:10.0.0.15:6000" 
+callId="b08780fb91e965d6d80e80d4badd5fc4@10.0.0.15" 
+firstLine="SIP/2.0 200 OK" 
+>
+<![CDATA[SIP/2.0 200 OK
+Call-ID: b08780fb91e965d6d80e80d4badd5fc4@10.0.0.15
+CSeq: 1 MESSAGE
+From: "eriko2" <sip:eriko2@10.0.0.15:6000>;tag=textclientv1.0
+To: "eriko" <sip:eriko@10.0.0.15:5000>;tag=888
+Via: SIP/2.0/UDP 10.0.0.15:6000;branch=branch1
+Content-Length: 0
+
+]]>
+</message>
+
+<message
+from="10.0.0.15:5000" 
+to="10.0.0.15:6000" 
+time="1211827469154"
+isSender="false" 
+transactionId="textclientv1.0:b08780fb91e965d6d80e80d4badd5fc4@10.0.0.15:1:message:10.0.0.15:6000" 
+callId="b08780fb91e965d6d80e80d4badd5fc4@10.0.0.15" 
+firstLine="SIP/2.0 200 OK" 
+>
+<![CDATA[SIP/2.0 200 OK
+Call-ID: b08780fb91e965d6d80e80d4badd5fc4@10.0.0.15
+CSeq: 1 MESSAGE
+From: "eriko2" <sip:eriko2@10.0.0.15:6000>;tag=textclientv1.0
+To: "eriko" <sip:eriko@10.0.0.15:5000>;tag=888
+Via: SIP/2.0/UDP 10.0.0.15:6000;branch=branch1
+Content-Length: 0
+
+]]>
+</message>
+
+<message
+from="10.0.0.15:6000" 
+to="10.0.0.15:5000" 
+time="1211827470330"
+isSender="true" 
+transactionId="textclientv1.0:dc60adce46a9ec1352e59aa8eb373c71@10.0.0.15:1:message:10.0.0.15:6000" 
+callId="dc60adce46a9ec1352e59aa8eb373c71@10.0.0.15" 
+firstLine="MESSAGE sip:eriko@10.0.0.15:5000;transport=udp SIP/2.0" 
+>
+<![CDATA[MESSAGE sip:eriko@10.0.0.15:5000;transport=udp SIP/2.0
+Call-ID: dc60adce46a9ec1352e59aa8eb373c71@10.0.0.15
+CSeq: 1 MESSAGE
+From: "eriko2" <sip:eriko2@10.0.0.15:6000>;tag=textclientv1.0
+To: "eriko" <sip:eriko@10.0.0.15:5000>
+Via: SIP/2.0/UDP 10.0.0.15:6000;branch=branch1
+Max-Forwards: 70
+Contact: "eriko2" <sip:eriko2@10.0.0.15:6000>
+Content-Type: text/plain
+Content-Length: 5
+
+]]>
+</message>
+
+<message
+from="10.0.0.15:6000" 
+to="10.0.0.15:5000" 
+time="1211827470334"
+isSender="false" 
+transactionId="textclientv1.0:dc60adce46a9ec1352e59aa8eb373c71@10.0.0.15:1:message:10.0.0.15:6000" 
+callId="dc60adce46a9ec1352e59aa8eb373c71@10.0.0.15" 
+firstLine="MESSAGE sip:eriko@10.0.0.15:5000;transport=udp SIP/2.0" 
+>
+<![CDATA[MESSAGE sip:eriko@10.0.0.15:5000;transport=udp SIP/2.0
+Call-ID: dc60adce46a9ec1352e59aa8eb373c71@10.0.0.15
+CSeq: 1 MESSAGE
+From: "eriko2" <sip:eriko2@10.0.0.15:6000>;tag=textclientv1.0
+To: "eriko" <sip:eriko@10.0.0.15:5000>
+Via: SIP/2.0/UDP 10.0.0.15:6000;branch=branch1
+Max-Forwards: 70
+Contact: "eriko2" <sip:eriko2@10.0.0.15:6000>
+Content-Type: text/plain
+Content-Length: 5
+
+]]>
+</message>
+
+<message
+from="10.0.0.15:5000" 
+to="10.0.0.15:6000" 
+time="1211827470345"
+isSender="true" 
+transactionId="textclientv1.0:dc60adce46a9ec1352e59aa8eb373c71@10.0.0.15:1:message:10.0.0.15:6000" 
+callId="dc60adce46a9ec1352e59aa8eb373c71@10.0.0.15" 
+firstLine="SIP/2.0 200 OK" 
+>
+<![CDATA[SIP/2.0 200 OK
+Call-ID: dc60adce46a9ec1352e59aa8eb373c71@10.0.0.15
+CSeq: 1 MESSAGE
+From: "eriko2" <sip:eriko2@10.0.0.15:6000>;tag=textclientv1.0
+To: "eriko" <sip:eriko@10.0.0.15:5000>;tag=888
+Via: SIP/2.0/UDP 10.0.0.15:6000;branch=branch1
+Content-Length: 0
+
+]]>
+</message>
+
+<message
+from="10.0.0.15:5000" 
+to="10.0.0.15:6000" 
+time="1211827470349"
+isSender="false" 
+transactionId="textclientv1.0:dc60adce46a9ec1352e59aa8eb373c71@10.0.0.15:1:message:10.0.0.15:6000" 
+callId="dc60adce46a9ec1352e59aa8eb373c71@10.0.0.15" 
+firstLine="SIP/2.0 200 OK" 
+>
+<![CDATA[SIP/2.0 200 OK
+Call-ID: dc60adce46a9ec1352e59aa8eb373c71@10.0.0.15
+CSeq: 1 MESSAGE
+From: "eriko2" <sip:eriko2@10.0.0.15:6000>;tag=textclientv1.0
+To: "eriko" <sip:eriko@10.0.0.15:5000>;tag=888
+Via: SIP/2.0/UDP 10.0.0.15:6000;branch=branch1
+Content-Length: 0
+
+]]>
+</message>
+
+<message
+from="10.0.0.15:5000" 
+to="10.0.0.15:6000" 
+time="1211827510429"
+isSender="true" 
+transactionId="textclientv1.0:5becf865b1bc7e941b01211b3dcfd2c3@10.0.0.15:1:message:10.0.0.15:5000" 
+callId="5becf865b1bc7e941b01211b3dcfd2c3@10.0.0.15" 
+firstLine="MESSAGE sip:eriko2@10.0.0.15:6000;transport=udp SIP/2.0" 
+>
+<![CDATA[MESSAGE sip:eriko2@10.0.0.15:6000;transport=udp SIP/2.0
+Call-ID: 5becf865b1bc7e941b01211b3dcfd2c3@10.0.0.15
+CSeq: 1 MESSAGE
+From: "eriko" <sip:eriko@10.0.0.15:5000>;tag=textclientv1.0
+To: "eriko2" <sip:eriko2@10.0.0.15:6000>
+Via: SIP/2.0/UDP 10.0.0.15:5000;branch=branch1
+Max-Forwards: 70
+Contact: "eriko" <sip:eriko@10.0.0.15:5000>
+Content-Type: text/plain
+Content-Length: 6
+
+]]>
+</message>
+
+<message
+from="10.0.0.15:5000" 
+to="10.0.0.15:6000" 
+time="1211827515878"
+isSender="true" 
+transactionId="textclientv1.0:4214de458a4ed879f7a9083e504d0841@10.0.0.15:1:message:10.0.0.15:5000" 
+callId="4214de458a4ed879f7a9083e504d0841@10.0.0.15" 
+firstLine="MESSAGE sip:eriko2@10.0.0.15:6000;transport=udp SIP/2.0" 
+>
+<![CDATA[MESSAGE sip:eriko2@10.0.0.15:6000;transport=udp SIP/2.0
+Call-ID: 4214de458a4ed879f7a9083e504d0841@10.0.0.15
+CSeq: 1 MESSAGE
+From: "eriko" <sip:eriko@10.0.0.15:5000>;tag=textclientv1.0
+To: "eriko2" <sip:eriko2@10.0.0.15:6000>
+Via: SIP/2.0/UDP 10.0.0.15:5000;branch=branch1
+Max-Forwards: 70
+Contact: "eriko" <sip:eriko@10.0.0.15:5000>
+Content-Type: text/plain
+Content-Length: 6
+
+]]>
+</message>
+
+<message
+from="10.0.0.15:5000" 
+to="10.0.0.15:6000" 
+time="1211827516792"
+isSender="true" 
+transactionId="textclientv1.0:1f991d820f48f1ad76199d911f216e51@10.0.0.15:1:message:10.0.0.15:5000" 
+callId="1f991d820f48f1ad76199d911f216e51@10.0.0.15" 
+firstLine="MESSAGE sip:eriko2@10.0.0.15:6000;transport=udp SIP/2.0" 
+>
+<![CDATA[MESSAGE sip:eriko2@10.0.0.15:6000;transport=udp SIP/2.0
+Call-ID: 1f991d820f48f1ad76199d911f216e51@10.0.0.15
+CSeq: 1 MESSAGE
+From: "eriko" <sip:eriko@10.0.0.15:5000>;tag=textclientv1.0
+To: "eriko2" <sip:eriko2@10.0.0.15:6000>
+Via: SIP/2.0/UDP 10.0.0.15:5000;branch=branch1
+Max-Forwards: 70
+Contact: "eriko" <sip:eriko@10.0.0.15:5000>
+Content-Type: text/plain
+Content-Length: 6
+
+]]>
+</message>
+
+<message
+from="10.0.0.15:5000" 
+to="10.0.0.15:6000" 
+time="1211827517078"
+isSender="true" 
+transactionId="textclientv1.0:784684f9045c5a1f012934c65e2c14d6@10.0.0.15:1:message:10.0.0.15:5000" 
+callId="784684f9045c5a1f012934c65e2c14d6@10.0.0.15" 
+firstLine="MESSAGE sip:eriko2@10.0.0.15:6000;transport=udp SIP/2.0" 
+>
+<![CDATA[MESSAGE sip:eriko2@10.0.0.15:6000;transport=udp SIP/2.0
+Call-ID: 784684f9045c5a1f012934c65e2c14d6@10.0.0.15
+CSeq: 1 MESSAGE
+From: "eriko" <sip:eriko@10.0.0.15:5000>;tag=textclientv1.0
+To: "eriko2" <sip:eriko2@10.0.0.15:6000>
+Via: SIP/2.0/UDP 10.0.0.15:5000;branch=branch1
+Max-Forwards: 70
+Contact: "eriko" <sip:eriko@10.0.0.15:5000>
+Content-Type: text/plain
+Content-Length: 6
+
+]]>
+</message>
+
+<message
+from="10.0.0.15:5000" 
+to="10.0.0.15:6000" 
+time="1211827518342"
+isSender="true" 
+transactionId="textclientv1.0:c5fc7e037ab050a548dc97514cd04100@10.0.0.15:1:message:10.0.0.15:5000" 
+callId="c5fc7e037ab050a548dc97514cd04100@10.0.0.15" 
+firstLine="MESSAGE sip:eriko2@10.0.0.15:6000;transport=udp SIP/2.0" 
+>
+<![CDATA[MESSAGE sip:eriko2@10.0.0.15:6000;transport=udp SIP/2.0
+Call-ID: c5fc7e037ab050a548dc97514cd04100@10.0.0.15
+CSeq: 1 MESSAGE
+From: "eriko" <sip:eriko@10.0.0.15:5000>;tag=textclientv1.0
+To: "eriko2" <sip:eriko2@10.0.0.15:6000>
+Via: SIP/2.0/UDP 10.0.0.15:5000;branch=branch1
+Max-Forwards: 70
+Contact: "eriko" <sip:eriko@10.0.0.15:5000>
+Content-Type: text/plain
+Content-Length: 6
+
+]]>
+</message>
+
