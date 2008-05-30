@@ -18,6 +18,7 @@ import java.net.InetAddress;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
+import javax.swing.JOptionPane;
 import javax.swing.JScrollPane;
 import javax.swing.JTextArea;
 import javax.swing.JTextField;
@@ -45,7 +46,9 @@ public class TextClient
         }
 
         try {
-            String username = args[0];
+            
+            
+            String username = args[1];
             int port = Integer.parseInt(args[1]);
             String ip = InetAddress.getLocalHost().getHostAddress();
 
