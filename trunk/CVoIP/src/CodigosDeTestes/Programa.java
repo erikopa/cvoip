@@ -43,6 +43,7 @@ public class Programa extends javax.swing.JFrame {
 
             player = Manager.createPlayer(url);
             player.realize();
+            
 
         } catch (Exception e) {
             e.printStackTrace();

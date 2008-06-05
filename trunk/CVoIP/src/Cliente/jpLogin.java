@@ -48,16 +48,12 @@ public class jpLogin extends javax.swing.JPanel {
             }
         });
 
-        jlAviso.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        jlAviso.setFont(new java.awt.Font("Tahoma", 1, 11));
         jlAviso.setForeground(new java.awt.Color(204, 0, 0));
         jlAviso.setText("Entre com os dados...");
         jlAviso.setVisible(false);
 
-        try {
-            jftPorta.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.MaskFormatter("#####")));
-        } catch (java.text.ParseException ex) {
-            ex.printStackTrace();
-        }
+        jftPorta.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter(new java.text.DecimalFormat("#0"))));
         jftPorta.setFocusLostBehavior(javax.swing.JFormattedTextField.PERSIST);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
