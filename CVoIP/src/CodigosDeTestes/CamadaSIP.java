@@ -1,11 +1,10 @@
-/*
+ /*
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
 
 package CodigosDeTestes;
 
-import CodigosDeTestes.IProcessadorMensagem;
 import java.text.ParseException;
 import java.util.ArrayList;
 import java.util.Properties;
