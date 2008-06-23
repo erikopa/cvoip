@@ -101,7 +101,7 @@ private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRS
     
     if(!((jtfUsuario.getText().equals(""))||(jftPorta.getText().equals("")))){
         usuario = jtfUsuario.getText();
-        porta = Integer.parseInt(jftPorta.getText());
+        porta = Integer.parseInt(jftPorta.getText().replaceAll(" ", ""));
         this.setVisible(false);
         frmcliente.jpPainel.setVisible(true);
         frmcliente.getContentPane().add(frmcliente.jpPainel, java.awt.BorderLayout.PAGE_END);
