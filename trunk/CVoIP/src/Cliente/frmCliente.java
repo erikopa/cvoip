@@ -28,28 +28,34 @@ public class frmCliente extends javax.swing.JFrame {
     private void initComponents() {
 
         jpPainel = new javax.swing.JPanel();
+        jpStatus = new javax.swing.JPanel();
+        jStatus = new javax.swing.JLabel();
         jpPrincipal = new javax.swing.JPanel();
         jLabel2 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
         jtfURL = new javax.swing.JTextField();
         jButton1 = new javax.swing.JButton();
         jFormattedTextField1 = new javax.swing.JFormattedTextField();
-        jpStatus = new javax.swing.JPanel();
-        jStatus = new javax.swing.JLabel();
-        jMenuBar1 = new javax.swing.JMenuBar();
-        jMenu1 = new javax.swing.JMenu();
-        jMenu2 = new javax.swing.JMenu();
-        jMenuItem1 = new javax.swing.JMenuItem();
-        jMenuBar1 = new javax.swing.JMenuBar();
-        jMenu1 = new javax.swing.JMenu();
-        jMenu2 = new javax.swing.JMenu();
-        jMenuItem1 = new javax.swing.JMenuItem();
+        jMenuBar2 = new javax.swing.JMenuBar();
+        jMenu3 = new javax.swing.JMenu();
+        jMenu4 = new javax.swing.JMenu();
+        jMenuItem2 = new javax.swing.JMenuItem();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("CVoIP");
         setResizable(false);
 
         jpPainel.setLayout(new java.awt.BorderLayout());
+
+        jpStatus.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        jpStatus.setLayout(new java.awt.BorderLayout());
+
+        jStatus.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
+        jpStatus.add(jStatus, java.awt.BorderLayout.CENTER);
+
+        jpPainel.add(jpStatus, java.awt.BorderLayout.CENTER);
+
+        getContentPane().add(jpPainel, java.awt.BorderLayout.PAGE_END);
 
         jpPrincipal.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jpPrincipal.setAutoscrolls(true);
@@ -61,12 +67,11 @@ public class frmCliente extends javax.swing.JFrame {
         jButton1.setText("Ligar");
         jButton1.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
         jButton1.setVerticalAlignment(javax.swing.SwingConstants.BOTTOM);
-
-        try {
-            jFormattedTextField1.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.MaskFormatter("#####")));
-        } catch (java.text.ParseException ex) {
-            ex.printStackTrace();
-        }
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jpPrincipalLayout = new javax.swing.GroupLayout(jpPrincipal);
         jpPrincipal.setLayout(jpPrincipalLayout);
@@ -95,7 +100,7 @@ public class frmCliente extends javax.swing.JFrame {
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jpPrincipalLayout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jLabel1)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 15, Short.MAX_VALUE)
                 .addComponent(jtfURL, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel2)
@@ -106,48 +111,30 @@ public class frmCliente extends javax.swing.JFrame {
                 .addGap(23, 23, 23))
         );
 
-        jpPainel.add(jpPrincipal, java.awt.BorderLayout.PAGE_START);
+        getContentPane().add(jpPrincipal, java.awt.BorderLayout.CENTER);
 
-        jpStatus.setBorder(javax.swing.BorderFactory.createEtchedBorder());
-        jpStatus.setLayout(new java.awt.BorderLayout());
+        jMenu3.setText("Principal");
+        jMenuBar2.add(jMenu3);
 
-        jStatus.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
-        jStatus.setIcon(new javax.swing.ImageIcon("C:\\Users\\eriko\\Desktop\\Cassia\\Projeto\\trunk\\CVoIP\\src\\imagens\\sip\\sip16x16-offline.png")); // NOI18N
-        jpStatus.add(jStatus, java.awt.BorderLayout.CENTER);
+        jMenu4.setText("Opções");
 
-        jpPainel.add(jpStatus, java.awt.BorderLayout.CENTER);
+        jMenuItem2.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_A, java.awt.event.InputEvent.CTRL_MASK));
+        jMenuItem2.setText("Ativar Recebimento de Chamada");
+        jMenu4.add(jMenuItem2);
 
-        getContentPane().add(jpPainel, java.awt.BorderLayout.PAGE_END);
+        jMenuBar2.add(jMenu4);
 
-        jMenu1.setText("Principal");
-        jMenuBar1.add(jMenu1);
-
-        jMenu2.setText("Opções");
-
-        jMenuItem1.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_A, java.awt.event.InputEvent.CTRL_MASK));
-        jMenuItem1.setText("Ativar Recebimento de Chamada");
-        jMenu2.add(jMenuItem1);
-
-        jMenuBar1.add(jMenu2);
-
-        setJMenuBar(jMenuBar1);
-
-        jMenu1.setText("Principal");
-        jMenuBar1.add(jMenu1);
-
-        jMenu2.setText("Opções");
-
-        jMenuItem1.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_A, java.awt.event.InputEvent.CTRL_MASK));
-        jMenuItem1.setText("Ativar Recebimento de Chamada");
-        jMenu2.add(jMenuItem1);
-
-        jMenuBar1.add(jMenu2);
-
-        setJMenuBar(jMenuBar1);
+        setJMenuBar(jMenuBar2);
 
         java.awt.Dimension screenSize = java.awt.Toolkit.getDefaultToolkit().getScreenSize();
-        setBounds((screenSize.width-272)/2, (screenSize.height-237)/2, 272, 237);
+        setBounds((screenSize.width-272)/2, (screenSize.height-221)/2, 272, 221);
     }// </editor-fold>//GEN-END:initComponents
+
+private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+// TODO add your handling code here:
+//GEN-LAST:event_jButton1ActionPerformed
+
+}
     
     /**
      * @param args the command line arguments
@@ -180,10 +167,10 @@ public class frmCliente extends javax.swing.JFrame {
     private javax.swing.JFormattedTextField jFormattedTextField1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
-    private javax.swing.JMenu jMenu1;
-    private javax.swing.JMenu jMenu2;
-    private javax.swing.JMenuBar jMenuBar1;
-    private javax.swing.JMenuItem jMenuItem1;
+    private javax.swing.JMenu jMenu3;
+    private javax.swing.JMenu jMenu4;
+    private javax.swing.JMenuBar jMenuBar2;
+    private javax.swing.JMenuItem jMenuItem2;
     private javax.swing.JLabel jStatus;
     public javax.swing.JPanel jpPainel;
     private javax.swing.JPanel jpPrincipal;
