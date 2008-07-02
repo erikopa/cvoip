@@ -1,9 +1,9 @@
- /*
+/*
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
 
-package CodigosDeTestes;
+package Dispositivos;
 
 import java.text.ParseException;
 import java.util.ArrayList;
@@ -40,6 +40,7 @@ import javax.sip.header.ViaHeader;
 import javax.sip.message.MessageFactory;
 import javax.sip.message.Request;
 import javax.sip.message.Response;
+import Interfaces.*;
 
 /**
  *
@@ -51,9 +52,6 @@ public class CamadaSIP implements SipListener {
 
    
     private String usuario;
-
-    
-    
     private SipStack sipStack;
     private SipFactory sipFactory;
     private AddressFactory addressFactory;
@@ -75,10 +73,10 @@ public class CamadaSIP implements SipListener {
         //DEBUGGING: Information will go to files 
 	//textclient.log and textclientdebug.log
 	properties.setProperty("gov.nist.javax.sip.TRACE_LEVEL", "32");
-	properties.setProperty("gov.nist.javax.sip.SERVER_LOG",
-		"textclient.txt");
-	properties.setProperty("gov.nist.javax.sip.DEBUG_LOG",
-		"textclientdebug.log");
+	//properties.setProperty("gov.nist.javax.sip.SERVER_LOG",
+	//	"textclient.txt");
+	//properties.setProperty("gov.nist.javax.sip.DEBUG_LOG",
+	//	"textclientdebug.log");
 
 	sipStack = sipFactory.createSipStack(properties);
 	headerFactory = sipFactory.createHeaderFactory();
@@ -96,7 +94,7 @@ public class CamadaSIP implements SipListener {
 
     }
     /**
-     * This method uses the SIP stack to send a message. 
+     * Este método utiliza a pilha SIP para enviar uma mensagem. 
      */
 
     public void sendMessage(String to, String message) throws ParseException,
@@ -153,7 +151,13 @@ public class CamadaSIP implements SipListener {
 	sipProvider.sendRequest(request);
     }
 
-/** This method is called by the SIP stack when a response arrives. */
+    
+    
+    
+    
+    
+    
+/** Este método é chamado pela pilha SIP quando chega uma resposta. */
     public void processResponse(ResponseEvent evt) {
 	Response response = evt.getResponse();
 	int status = response.getStatusCode();
@@ -163,29 +167,34 @@ public class CamadaSIP implements SipListener {
 	    return;
 	}
 
-	processadorMensagem.processarErro("Previous message not sent: " + status);
+	processadorMensagem.processarErro("A mensagem anterior não foi enviada: " + status);
     }
 
 
     
     
+    
+    
+    
+    
+    
     /** 
-     * This method is called by the SIP stack when a new request arrives. 
+     * Este método é chamado pela pilha SIP quando chega um novo pedido (request). 
      */
     public void processRequest(RequestEvent evt) {
 	Request req = evt.getRequest();
 
 	String method = req.getMethod();
-	if (!method.equals("MESSAGE")) { //bad request type.
-	    processadorMensagem.processarErro("Bad request type: " + method);
+	if (!method.equals("MESSAGE")) { //Tipo do problema de requisião
+	    processadorMensagem.processarErro("Problema de requisição tipo: " + method);
 	    return;
 	}
 
-	FromHeader from = (FromHeader) req.getHeader("From");
+	FromHeader from = (FromHeader) req.getHeader("Remetente: ");
 	processadorMensagem.processarMensagem(from.getAddress().toString(),
 		new String(req.getRawContent()));
 	Response response = null;
-	try { //Reply with OK
+	try { //Responder se OK
 	    response = messageFactory.createResponse(200, req);
 	    ToHeader toHeader = (ToHeader) response.getHeader(ToHeader.NAME);
 	    toHeader.setTag("888"); //This is mandatory as per the spec.
@@ -193,29 +202,30 @@ public class CamadaSIP implements SipListener {
 	    st.sendResponse(response);
 	} catch (Throwable e) {
 	    e.printStackTrace();
-	    processadorMensagem.processarErro("Can't send OK reply.");
+	    processadorMensagem.processarErro("Não pode ser enviada. " +
+                    "Tente novamente.");
 	}
     }
-/** 
-     * This method is called by the SIP stack when there's no answer 
-     * to a message. Note that this is treated differently from an error
-     * message. 
+    /** 
+     * Este método é chamado pela pilha SIP quando não há resposta a 
+     * uma mensagem. Note que esta é tratada de maneira diferente a partir 
+     * de uma mensagem de erro.
      */
     public void processTimeout(TimeoutEvent evt) {
 	processadorMensagem
-		.processarErro("Previous message not sent: " + "timeout");
+		.processarErro("A mensagem anterior não foi enviada: " + "timeout");
     }
 
 
     
 
     /** 
-     * This method is called by the SIP stack when there's an asynchronous
-     * message transmission error.  
+     * Este método é chamado pela pilha SIP quando há uma mensagem 
+     * transmissão assíncrona de erro.  
      */
     public void processIOException(IOExceptionEvent evt) {
-	processadorMensagem.processarErro("Previous message not sent: "
-		+ "I/O Exception");
+	processadorMensagem.processarErro("A mensagem anterior não foi enviada: "
+		+ "Exceção de I/O");
     }
 
     
