@@ -1,0 +1,1 @@
+Projeto de 7º periodo do Curso de Ciências da Computação do Centro Universitário do Pará.
